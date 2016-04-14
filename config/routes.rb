@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'pages#index'
+  root 'pages#home'
 
   get 'pages/home' => 'pages#home'
 
   get '/user/:id' => 'pages#profile'
 
 
-  get 'pages/explore' => 'pages#explore'
+  get '/explore' => 'pages#explore'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
